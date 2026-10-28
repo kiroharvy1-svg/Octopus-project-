@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الأخطبوط عم الكل - دليل الإسعافات الأولية</title>
+    <title>Octopus Boss - First Aid Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,173 +11,171 @@
 <div class="container">
     <header>
         <div class="header-top">
-            <p class="octopus-badge">الأخطبوط عم الكل 🐙</p>
-            <button id="theme-toggle" class="theme-btn">غير للاسود</button>
+            <p class="octopus-badge">Octopus Boss 🐙</p>
+            <div class="header-btns">
+                <button id="translate-btn" class="theme-btn">🌐 عربي</button>
+                <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+            </div>
         </div>
-        <h1>دليل الإسعافات الأولية </h1>
-        <p>كل اللي تحتاجه عشان تفهم المسح الأولي، وضع الإفاقة</p>
+        <h1 data-ar="دليل الإسعافات الأولية الشامل - المحاضرة 1">Comprehensive First Aid Guide - Lecture 1</h1>
+        <p data-ar="كل اللي تحتاجه عشان تفهم المسح الأولي، وضع الإفاقة، والإنعاش بطريقة مبسطة">Everything you need to understand primary survey, recovery position, and CPR simply</p>
     </header>
 
     <div class="nav-tabs">
-        <button class="tab-btn active" data-tab="0">المبادئ والمفاهيم</button>
-        <button class="tab-btn" data-tab="1">المسح الأولي (Check-Call-Care)</button>
-        <button class="tab-btn" data-tab="2">وضع الإفاقة</button>
-        <button class="tab-btn" data-tab="3">الإنعاش القلبي الرئوي (CPR)</button>
-        <button class="tab-btn" data-tab="4">الحالات العملية (Cases)</button>
+        <button class="tab-btn active" data-tab="0" data-ar="المبادئ والمفاهيم">Principles</button>
+        <button class="tab-btn" data-tab="1" data-ar="المسح الأولي (Check-Call-Care)">Primary Survey (Check-Call-Care)</button>
+        <button class="tab-btn" data-tab="2" data-ar="وضع الإفاقة">Recovery Position</button>
+        <button class="tab-btn" data-tab="3" data-ar="الإنعاش القلبي الرئوي (CPR)">CPR</button>
+        <button class="tab-btn" data-tab="4" data-ar="الحالات العملية (Cases)">Cases</button>
     </div>
 
-    <!-- القسم الأول -->
     <div class="section-content active">
-        <h2>أولاً: مين هو المسعف الشاطر </h2>
+        <h2 data-ar="أولاً: مين هو المسعف الشاطر ومبادئه؟">First: Who is a good paramedic and what are their principles?</h2>
         <div class="image-container">
-            <img src="first-aider.webp" width="400" height="200" alt="First Aider">
+            <img src="first-aider.webp" alt="First Aider">
         </div>
-        <p>عشان تكون مسعف ناجح وتنقذ حياة شخص، فيه حاجات أساسية لازم تفتكرها بكلمة <strong>D-R-E-C-N-T</strong>:</p>
+        <p data-ar="عشان تكون مسعف ناجح وتنقذ حياة شخص، فيه حاجات أساسية لازم تفتكرها بكلمة D-R-E-C-N-T:">To be a successful paramedic and save a life, there are basic things to remember with the word <strong>D-R-E-C-N-T</strong>:</p>
         <ul>
-            <li><strong>اعمل اللي تقدر عليه بأفضل شكل (Do your best):</strong> بذل أقصى جهد لمساعدة المصاب.</li>
-            <li><strong>احترم الكرامة والخصوصية (Respect):</strong> من غير أي تفرقة أو تمييز بين الناس.</li>
-            <li><strong>اشرح اللي هتعمله (Explain):</strong> قول للمصاب واللي واقفين جنبك أنت ناوي تعمل إيه عشان تطمنهم.</li>
-            <li><strong>خد الإذن (Consent):</strong> لو الشخص العاقل واعي لازم تستأذنه الأول، لكن لو فاقد الوعي أو طفل أقل من 12 سنة مش محتاج إذن.</li>
-            <li><strong>ماتسيبش المصاب لوحده أبداً (Never leave):</strong> تفضل جنبه لحد ما الإسعاف تيجي.</li>
-            <li><strong>اشتغل على قد تدريبك بس (Trained only):</strong> ماتعملش حاجة أنت مش متعلمها عشان ماتضرش المصاب.</li>
+            <li><strong data-ar="اعمل اللي تقدر عليه بأفضل شكل (Do your best):">Do your best:</strong> <span data-ar="بذل أقصى جهد لمساعدة المصاب.">Making maximum effort to help the injured.</span></li>
+            <li><strong data-ar="احترم الكرامة والخصوصية (Respect):">Respect:</strong> <span data-ar="من غير أي تفرقة أو تمييز بين الناس.">Without any discrimination between people.</span></li>
+            <li><strong data-ar="اشرح اللي هتعمله (Explain):">Explain:</strong> <span data-ar="قول للمصاب واللي واقفين جنبك أنت ناوي تعمل إيه عشان تطمنهم.">Tell the injured and those around you what you plan to do to reassure them.</span></li>
+            <li><strong data-ar="خد الإذن (Consent):">Consent:</strong> <span data-ar="لو الشخص العاقل واعي لازم تستأذنه الأول، لكن لو فاقد الوعي أو طفل أقل من 12 سنة مش محتاج إذن.">If a rational person is conscious, you must ask permission first, but if unconscious or a child under 12, permission is not needed.</span></li>
+            <li><strong data-ar="ماتسيبش المصاب لوحده أبداً (Never leave):">Never leave:</strong> <span data-ar="تفضل جنبه لحد ما الإسعاف تيجي.">Stay by their side until the ambulance arrives.</span></li>
+            <li><strong data-ar="اشتغل على قد تدريبك بس (Trained only):">Trained only:</strong> <span data-ar="ماتعملش حاجة أنت مش متعلمها عشان ماتضرش المصاب.">Do not do something you haven't been trained to do so you don't harm the injured.</span></li>
         </ul>
 
-        <h3>تصنيف المصابين حسب العمر:</h3>
+        <h3 data-ar="تصنيف المصابين حسب العمر:">Classification of injured by age:</h3>
         <ul>
-            <li><strong>الرضيع:</strong> من الولادة لحد سنة.</li>
-            <li><strong>الطفل:</strong> من سنة لحد سن البلوغ.</li>
-            <li><strong>البالغ:</strong> من سن البلوغ وطالع.</li>
+            <li><strong data-ar="الرضيع:">Infant:</strong> <span data-ar="من الولادة لحد سنة.">From birth to 1 year.</span></li>
+            <li><strong data-ar="الطفل:">Child:</strong> <span data-ar="من سنة لحد سن البلوغ.">From 1 year to puberty.</span></li>
+            <li><strong data-ar="البالغ:">Adult:</strong> <span data-ar="من سن البلوغ وطالع.">From puberty onwards.</span></li>
         </ul>
     </div>
 
-    <!-- القسم الثاني -->
     <div class="section-content">
-        <h2>ثانياً: المسح الأولي (Check – Call – Care)</h2>
+        <h2 data-ar="ثانياً: المسح الأولي (Check – Call – Care)">Second: Primary Survey (Check – Call – Care)</h2>
         <div class="image-container">
-            <img src="Primary-Survey.png" width="450" height="200" alt="Primary Survey">
+            <img src="Primary-Survey.png" alt="Check Call Care">
         </div>
-        <p>أول ما تشوف حادثة أو شخص تعبان، بتمشي على القاعدة دي بترتيب صارم:</p>
+        <p data-ar="أول ما تشوف حادثة أو شخص تعبان، بتمشي على القاعدة دي بترتيب صارم:">As soon as you see an accident or a sick person, you follow this exact order:</p>
         
         <div class="card-box">
-            <h3>1. افحص المكان والشخص (CHECK)</h3>
-            <p><strong>المكان:</strong> اتأكد إن المكان آمن ليك انت والمصاب واللي حواليك.</p>
-            <p><strong>الشخص:</strong> طبطب على كتفه بالراحة واديه هزة خفيفة وكلمه بصوت عالي: "يا فندم أنت كويس؟"</p>
-            <p><strong>تحديد مستوى الوعي:</strong> واعي (بيرد بمنتهى الوعي)، نصف واعي (بيفتح عينه بس مش مركز وده محتاج إسعاف عاجل)، فاقد الوعي تماماً.</p>
+            <h3 data-ar="1. افحص المكان والشخص (CHECK)">1. Check the scene and person (CHECK)</h3>
+            <p><strong data-ar="المكان:">Scene:</strong> <span data-ar="اتأكد إن المكان آمن ليك انت والمصاب واللي حواليك.">Make sure the place is safe for you, the injured, and those around you.</span></p>
+            <p><strong data-ar="الشخص:">Person:</strong> <span data-ar="طبطب على كتفه بالراحة واديه هزة خفيفة وكلمه بصوت عالي: 'يا فندم أنت كويس؟'">Tap his shoulder gently, give a light shake, and speak loudly: "Sir, are you okay?"</span></p>
+            <p><strong data-ar="تحديد مستوى الوعي:">Level of consciousness:</strong> <span data-ar="واعي (بيرد بمنتهى الوعي)، نصف واعي (بيفتح عينه بس مش مركز وده محتاج إسعاف عاجل)، فاقد الوعي تماماً.">Conscious (responds fully), Semi-conscious (opens eyes but unfocused and needs urgent help), Unconscious completely.</span></p>
         </div>
 
         <div class="card-box">
-            <h3>2. اتصل بالإسعاف (CALL)</h3>
-            <p>في مصر، رقم الإسعاف السريع هو <strong>123</strong>.</p>
-            <p>لما تكلمهم قولهم: المكان بدقة، عدد المصابين، إيه اللي حصل، وهل حد بيعمله إسعاف ولا لأ، واطلب جهاز الصدمات (AED) لو متوفر. <strong>أوعى تقفل السكة لحد ما الموظف يقولك اقفل!</strong></p>
+            <h3 data-ar="2. اتصل بالإسعاف (CALL)">2. Call for help (CALL)</h3>
+            <p data-ar="في مصر، رقم الإسعاف السريع هو 123.">In Egypt, the emergency ambulance number is <strong>123</strong>.</p>
+            <p><span data-ar="لما تكلمهم قولهم: المكان بدقة، عدد المصابين، إيه اللي حصل، وهل حد بيعمله إسعاف ولا لأ، واطلب جهاز الصدمات (AED) لو متوفر.">When you call them, tell them: Exact location, number of injured, what happened, whether anyone is giving first aid, and ask for an AED if available.</span> <strong data-ar="أوعى تقفل السكة لحد ما الموظف يقولك اقفل!">Never hang up until the operator tells you to!</strong></p>
         </div>
 
         <div class="card-box">
-            <h3>3. قدم الرعاية والفحص (CARE)</h3>
-            <p><strong>التنفس:</strong> افحص تنفس المصاب في مدة أقصاها <strong>5 ثواني</strong> (التنهيد أو الشهقان المفاجئ مش تنفس طبيعي!).</p>
-            <p><strong>النبض:</strong> لو مش بيتنفس افحص النبض من 5 لـ 10 ثواني (من الشريان السباتي للبالغين، ومن الشريان العضدي للرضع).</p>
-            <p><strong>فتح مجرى الهواء:</strong> بإمالة الرأس للوراء ورفع الذقن (Head-tilt/Chin-lift)، ولو فيه شك في إصابة الرقبة نستخدم دفع الفك (Jaw thrust).</p>
+            <h3 data-ar="3. قدم الرعاية والفحص (CARE)">3. Provide care and assessment (CARE)</h3>
+            <p><strong data-ar="التنفس:">Breathing:</strong> <span data-ar="افحص تنفس المصاب في مدة أقصاها 5 ثواني (التنهيد أو الشهقان المفاجئ مش تنفس طبيعي!).">Check the injured person's breathing in a maximum of <strong>5 seconds</strong> (gasping or sudden sighing is not normal breathing!).</span></p>
+            <p><strong data-ar="النبض:">Pulse:</strong> <span data-ar="لو مش بيتنفس افحص النبض من 5 لـ 10 ثواني (من الشريان السباتي للبالغين، ومن الشريان العضدي للرضع).">If not breathing, check the pulse for 5 to 10 seconds (from carotid artery for adults, brachial artery for infants).</span></p>
+            <p><strong data-ar="فتح مجرى الهواء:">Open airway:</strong> <span data-ar="بإمالة الرأس للوراء ورفع الذقن (Head-tilt/Chin-lift)، ولو فيه شك في إصابة الرقبة نستخدم دفع الفك (Jaw thrust).">By head-tilt/chin-lift, and if neck injury is suspected, use jaw thrust.</span></p>
         </div>
     </div>
 
-    <!-- القسم الثالث -->
     <div class="section-content">
-        <h2>ثالثاً: وضع الإفاقة (Recovery Position)</h2>
+        <h2 data-ar="ثالثاً: وضع الإفاقة (Recovery Position)">Third: Recovery Position</h2>
         <div class="image-container">
-            <img src="افاقه.jpg" width="400" height="200" alt="Recovery Position">
+            <img src="افاقه.jpg" alt="Recovery Position">
         </div>
-        <p>لو لقيت الشخص <strong>فاقد الوعي بس بيتنفس وعنده نبض عادي</strong>، بنتنيمه على جنبه (وضع الإفاقة).</p>
-        <p><strong>ليه بنعمل كده؟</strong> عشان لسانه مايبلعوش وعشان لو رجّع أو نزل أي إفرازات تخرج بره وما تسدش زوره وتخنقُه. وللرضع بنشيله على دراعنا وراسه نازلة لتحت شوية ومرتاحة.</p>
+        <p data-ar="لو لقيت الشخص فاقد الوعي بس بيتنفس وعنده نبض عادي، بنتنيمه على جنبه (وضع الإفاقة).">If you find an unconscious person who is breathing and has a normal pulse, lay them on their side (recovery position).</p>
+        <p><strong data-ar="ليه بنعمل كده؟">Why do we do this?</strong> <span data-ar="عشان لسانه مايبلعوش وعشان لو رجّع أو نزل أي إفرازات تخرج بره وما تسدش زوره وتخنقُه. وللرضع بنشيله على دراعنا وراسه نازلة لتحت شوية ومرتاحة.">So they don't swallow their tongue and so if they vomit or fluids come out, they exit without blocking the throat and suffocating them. For infants, we hold them on our arm with the head slightly lowered and supported.</span></p>
     </div>
 
-    <!-- القسم الرابع -->
     <div class="section-content">
-        <h2>رابعاً: الإنعاش القلبي الرئوي (CPR)</h2>
+        <h2 data-ar="رابعاً: الإنعاش القلبي الرئوي (CPR)">Fourth: Cardiopulmonary Resuscitation (CPR)</h2>
         <div class="image-container">
-            <img src="CPR.jpg" width="400" height="200" alt="CPR">
+            <img src="cpr.jpg" alt="CPR">
         </div>
-        <p>لما القلب يبطل يشتغل والتنفس يقف (توقف قلبي مفاجئ)، خلايا المخ بتبدأ تتأثر وتموت بعد <strong>3 دقائق بس!</strong></p>
+        <p data-ar="لما القلب يبطل يشتغل والتنفس يقف (توقف قلبي مفاجئ)، خلايا المخ بتبدأ تتأثر وتموت بعد 3 دقائق بس!">When the heart stops working and breathing stops (sudden cardiac arrest), brain cells begin to be affected and die after just <strong>3 minutes!</strong></p>
         
-        <h3>جدول مقارنة الـ CPR (بالغ، طفل، رضيع):</h3>
+        <h3 data-ar="جدول مقارنة الـ CPR (بالغ، طفل، رضيع):">CPR Comparison Table (Adult, Child, Infant):</h3>
         <table>
             <thead>
                 <tr>
-                    <th>وجه المقارنة</th>
-                    <th>البالغ</th>
-                    <th>الطفل</th>
-                    <th>الرضيع</th>
+                    <th data-ar="وجه المقارنة">Comparison</th>
+                    <th data-ar="البالغ">Adult</th>
+                    <th data-ar="الطفل">Child</th>
+                    <th data-ar="الرضيع">Infant</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>العمق</strong></td>
-                    <td>لا يقل عن 5 سم</td>
-                    <td>حوالي 5 سم</td>
-                    <td>حوالي 4 سم</td>
+                    <td><strong data-ar="العمق">Depth</strong></td>
+                    <td data-ar="لا يقل عن 5 سم">Not less than 5 cm</td>
+                    <td data-ar="حوالي 5 سم">About 5 cm</td>
+                    <td data-ar="حوالي 4 سم">About 4 cm</td>
                 </tr>
                 <tr>
-                    <td><strong>السرعة</strong></td>
-                    <td>أكتر من 100/دقيقة</td>
-                    <td>أكتر من 100/دقيقة</td>
-                    <td>أكتر من 100/دقيقة</td>
+                    <td><strong data-ar="السرعة">Speed</strong></td>
+                    <td data-ar="أكتر من 100/دقيقة">More than 100/min</td>
+                    <td data-ar="أكتر من 100/دقيقة">More than 100/min</td>
+                    <td data-ar="أكتر من 100/دقيقة">More than 100/min</td>
                 </tr>
                 <tr>
-                    <td><strong>النسبة (مسعف واحد)</strong></td>
+                    <td><strong data-ar="النسبة (مسعف واحد)">Ratio (1 rescuer)</strong></td>
                     <td>30 : 2</td>
                     <td>30 : 2</td>
                     <td>30 : 2</td>
                 </tr>
                 <tr>
-                    <td><strong>النسبة (مسعفين)</strong></td>
+                    <td><strong data-ar="النسبة (مسعفين)">Ratio (2 rescuers)</strong></td>
                     <td>30 : 2</td>
                     <td>15 : 2</td>
                     <td>15 : 2</td>
                 </tr>
                 <tr>
-                    <td><strong>طريقة الضغط</strong></td>
-                    <td>كف الإيدين فوق بعض</td>
-                    <td>كف إيد واحدة (أو إيدين)</td>
-                    <td>صوابعين اثنين بس</td>
+                    <td><strong data-ar="طريقة الضغط">Compression method</strong></td>
+                    <td data-ar="كف الإيدين فوق بعض">Palms of hands on top of each other</td>
+                    <td data-ar="كف إيد واحدة (أو إيدين)">One palm (or two)</td>
+                    <td data-ar="صوابعين اثنين بس">Two fingers only</td>
                 </tr>
             </tbody>
         </table>
 
-        <h3>إمتى توقف الـ CPR؟</h3>
+        <h3 data-ar="إمتى توقف الـ CPR؟">When to stop CPR?</h3>
         <ul>
-            <li>التنفس الطبيعي رجع للشخص.</li>
-            <li>أنت تعبت ومش قادر تكمل.</li>
-            <li>جهاز الصدمات الآلي (AED) جه وبقى جاهز.</li>
-            <li>الإسعاف وصلت واستلمت الحالة.</li>
-            <li>المكان بقى خطر جداً عليك.</li>
+            <li data-ar="التنفس الطبيعي رجع للشخص.">Normal breathing has returned to the person.</li>
+            <li data-ar="أنت تعبت ومش قادر تكمل.">You are exhausted and unable to continue.</li>
+            <li data-ar="جهاز الصدمات الآلي (AED) جه وبقى جاهز.">The Automated External Defibrillator (AED) arrived and is ready.</li>
+            <li data-ar="الإسعاف وصلت واستلمت الحالة.">Ambulance arrived and took over the case.</li>
+            <li data-ar="المكان بقى خطر جداً عليك.">The place became very dangerous for you.</li>
         </ul>
     </div>
 
-    <!-- القسم الخامس -->
     <div class="section-content">
-        <h2>خامساً: السيناريوهات والحالات العملية (Cases 1 - 4)</h2>
+        <h2 data-ar="خامساً: السيناريوهات والحالات العملية (Cases 1 - 4)">Fifth: Practical Scenarios and Cases (1 - 4)</h2>
         
         <div class="card-box">
-            <h3>حالة 1: واحد وقع من على العجلة ورجله بتنزف</h3>
-            <p><strong>الحل:</strong> المكان آمن؟ نعم. واعي؟ أيوة بيتحادث. بناخد إذنَه، نفحص من فوق لتحت ونعالج النزيف الشديد فوراً عشان نمنع حدوث صدمة ونطلب الإسعاف.</p>
+            <h3 data-ar="حالة 1: واحد وقع من على العجلة ورجله بتنزف">Case 1: Someone fell off a bike and their leg is bleeding</h3>
+            <p><strong data-ar="الحل:">Solution:</strong> <span data-ar="المكان آمن؟ نعم. واعي؟ أيوة بيتحادث. بناخد إذنَه، نفحص من فوق لتحت ونعالج النزيف الشديد فوراً عشان نمنع حدوث صدمة ونطلب الإسعاف.">Is the place safe? Yes. Conscious? Yes, communicating. We get permission, examine from top to bottom, treat severe bleeding immediately to prevent shock and call ambulance.</span></p>
         </div>
 
         <div class="card-box">
-            <h3>حالة 2: واحد مرمي في الأرض في المعسكر ومش بيستجيب بس صدره بيرتفع وينزل</h3>
-            <p><strong>الحل:</strong> ده معناه إنه فاقد الوعي بس بيتنفس! منعملوش CPR، بنحطه فوراً في <strong>وضع الإفاقة</strong> ونبعت حد يكلم 123 الإسعاف.</p>
+            <h3 data-ar="حالة 2: واحد مرمي في الأرض في المعسكر ومش بيستجيب بس صدره بيرتفع وينزل">Case 2: Someone lying on the ground in camp unresponsive but their chest is rising and falling</h3>
+            <p><strong data-ar="الحل:">Solution:</strong> <span data-ar="ده معناه إنه فاقد الوعي بس بيتنفس! منعملوش CPR، بنحطه فوراً في وضع الإفاقة ونبعت حد يكلم 123 الإسعاف.">This means they are unconscious but breathing! Do not do CPR, place them immediately in recovery position and send someone to call 123 ambulance.</span></p>
         </div>
 
         <div class="card-box">
-            <h3>حالة 3: واحد سقط فجأة وبيطلع أصوات تنهيد ومش بيتنفس ونبضه مش موجود</h3>
-            <p><strong>الحل:</strong> دي سكتة قلبية واضحة! نبدأ فوراً نعمل <strong>CPR</strong> (ضغطات صدرية بعمق 5 سم وبمعدل 30:2) ونبعت حد يجيب جهاز الصدمات ويتصل بالإسعاف.</p>
+            <h3 data-ar="حالة 3: واحد سقط فجأة وبيطلع أصوات تنهيد ومش بيتنفس ونبضه مش موجود">Case 3: Someone fell suddenly, making gasping sounds, not breathing, and pulse is absent</h3>
+            <p><strong data-ar="الحل:">Solution:</strong> <span data-ar="دي سكتة قلبية واضحة! نبدأ فوراً نعمل CPR (ضغطات صدرية بعمق 5 سم وبمعدل 30:2) ونبعت حد يجيب جهاز الصدمات ويتصل بالإسعاف.">This is clear cardiac arrest! Immediately start CPR (chest compressions 5 cm deep at 30:2) and send someone to get AED and call ambulance.</span></p>
         </div>
 
         <div class="card-box">
-            <h3>حالة 4: بيبي 8 شهور مش بيستجيب وتنهد ونبضه ضعيف أقل من 50</h3>
-            <p><strong>الحل:</strong> بنفحص نبضه العضدي، ولو النبض ضعيف أو مش موجود بنبدأ CPR للرضع بـ 2 صوابع بعمق 4 سم بنسبة 30:2 (لو شخص واحد) أو 15:2 (لو شخصين).</p>
+            <h3 data-ar="حالة 4: بيبي 8 شهور مش بيستجيب وتنهد ونبضه ضعيف أقل من 50">Case 4: An 8-month-old baby unresponsive, gasping, and weak pulse below 50</h3>
+            <p><strong data-ar="الحل:">Solution:</strong> <span data-ar="بنفحص نبضه العضدي، ولو النبض ضعيف أو مش موجود بنبدأ CPR للرضع بـ 2 صوابع بعمق 4 سم بنسبة 30:2 (لو شخص واحد) أو 15:2 (لو شخصين).">We check brachial pulse, if weak or absent we start infant CPR with 2 fingers 4 cm deep at 30:2 (one rescuer) or 15:2 (two rescuers).</span></p>
         </div>
     </div>
 
     <footer>
-        <p> معمول من طليعه الاخطبوت  </p>  
+        <p data-ar="تم إعداد هذا الدليل بكل إتقان بواسطة الأخطبوط عم الكل 🐙">This guide was prepared perfectly by Octopus Boss 🐙</p>
     </footer>
 </div>
 
