@@ -87,16 +87,44 @@ header {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-header h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* بتسمح للأزرار تنزل سطر جديد لو الموبايل ضيق */
+    gap: 10px;
 }
 
-header p {
-    font-size: 16px;
-    opacity: 0.9;
+.octopus-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
+.header-btns {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.theme-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
 .nav-tabs {
     display: flex;
     gap: 10px;
